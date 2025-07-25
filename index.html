@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Dear Hitu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="envelope" onclick="openEnvelope()">
+    <div class="flap"></div>
+    <div class="letter">
+      <h1>My dear Hitu,</h1>
+      <p>Wishing you the happiest birthday! 🎉<br>
+      You are like a little sister to me, full of light, laughter, and magic.<br>
+      May this year bring you endless joy and wonder.<br><br>
+      With love,<br>
+      Kael</p>
+    </div>
+  </div>
+
+  <audio id="bg-music" src="music.mp3" preload="auto"></audio>
+
+  <script>
+    function openEnvelope() {
+      document.querySelector(".envelope").classList.add("open");
+      document.getElementById("bg-music").play();
+    }
+  </script>
+</body>
+</html>
